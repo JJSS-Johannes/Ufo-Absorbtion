@@ -5,6 +5,7 @@ from modules.ufo import ufo
 from modules.entity import *
 from modules.bullet import *
 from modules.mythread import *
+from modules.relabs import *
 from tkinter import *
 import threading
 import time
@@ -47,8 +48,8 @@ master = Tk()
 master.geometry("800x500")
 master.title("UFO")
 master.resizable(width = 0, height = 0)
-
-bg = PhotoImage(file="pictures/bg.png")
+bg_path = resource_path0("pictures/bg.png")
+bg = PhotoImage(file=bg_path)
   
 w = Canvas(master, width = 800, height = 500)
 w.pack()

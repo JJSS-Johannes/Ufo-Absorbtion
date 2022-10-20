@@ -1,6 +1,7 @@
 from modules.tkgif import *
 from modules.collision import *
-from modules.bullet import * 
+from modules.bullet import *
+from modules.relabs import *
 import random
 from PIL import Image, ImageTk
 import sys
@@ -19,24 +20,26 @@ class entity():
         self.dead = False
         if typ == 0:
             self.typ = "unfriendly"
-            im = Image.open("pictures/enemyleft.gif")
+            self.path = resource_path0("pictures/enemyleft.gif")
+            im = Image.open(self.path)
             self.height = im.width/2
             self.width = im.height/2
             self.x = self.x + self.height
             if self.x % 2 != 0:
                 self.x += 1
             self.y = self.y - self.width
-            self.obj = tkgif("pictures/enemyleft.gif", self.master, self.canvas, (self.x, self.y))
+            self.obj = tkgif(self.path, self.master, self.canvas, (self.x, self.y))
         elif typ == 1:
             self.typ = "friendly"
-            im = Image.open("pictures/friendly.gif")
+            self.path = resource_path0("pictures/friendly.gif")
+            im = Image.open(self.path)
             self.height = im.width/2
             self.width = im.height/2
             self.x = self.x + self.height
             if self.x % 2 != 0:
                 self.x += 1
             self.y = self.y - self.width
-            self.obj = tkgif("pictures/friendly.gif", self.master, self.canvas, (self.x, self.y))
+            self.obj = tkgif(self.path, self.master, self.canvas, (self.x, self.y))
         self.col_box = collision_box((self.obj.pos[0]-self.width, self.obj.pos[1]-self.height),(self.obj.pos[0]+self.width, self.obj.pos[1]+self.height))
         self.target = random.randint(50, 714)
         self.dead = False
@@ -73,12 +76,14 @@ class entity():
             self.obj.move(v*self.vel, 0)
             self.x += v*self.vel
             if self.typ == "unfriendly":
-                if v == -1 and self.obj.file == "pictures/enemyright.gif":
+                if v == -1 and "enemyright" in self.obj.file:
+                    self.path = resource_path0("pictures/enemyleft.gif")
                     self.obj.destroy()
-                    self.obj = tkgif("pictures/enemyleft.gif", self.master, self.canvas, (self.x, self.y))
-                elif v == 1 and self.obj.file == "pictures/enemyleft.gif":
+                    self.obj = tkgif(self.path, self.master, self.canvas, (self.x, self.y))
+                elif v == 1 and "enemyleft" in self.obj.file:
+                    self.path = resource_path0("pictures/enemyright.gif")
                     self.obj.destroy()
-                    self.obj = tkgif("pictures/enemyright.gif", self.master, self.canvas, (self.x, self.y))
+                    self.obj = tkgif(self.path, self.master, self.canvas, (self.x, self.y))
             if self.dead != True:
                 self.col_box.place((self.obj.pos[0]-self.width, self.obj.pos[1]-self.height),(self.obj.pos[0]+self.width, self.obj.pos[1]+self.height))
     def destroy(self):

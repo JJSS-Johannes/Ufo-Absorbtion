@@ -1,5 +1,6 @@
 from tkinter import *
 from modules.collision import *
+from modules.relabs import *
 import time
 import threading
 
@@ -8,8 +9,10 @@ class ufo():
         self.x, self.y = pos
         self.vel = vel
         self.w = w
-        self.image = PhotoImage(file="pictures/ufo.png")
-        self.image_s = PhotoImage(file="pictures/beam.png")
+        self.image_path = resource_path0("pictures/ufo.png")
+        self.image = PhotoImage(file=self.image_path)
+        self.image_path_s = resource_path0("pictures/beam.png")
+        self.image_s = PhotoImage(file=self.image_path_s)
         self.obj = self.w.create_image(self.x+(self.image.width()/2), self.y+(self.image.height()/2), image = self.image)
         self.strahl = w.create_image(self.x+(self.image.width()/2), self.y+(self.image_s.height()/1.3), image = self.image_s, state = "hidden")
         self.w.lift(self.strahl)

@@ -1,5 +1,6 @@
 from modules.fishtools import get_movement
 from modules.collision import *
+from modules.relabs import *
 from tkinter import *
 
 class bullet():
@@ -10,7 +11,8 @@ class bullet():
         self.damage = damage
         self.health = health
         self.text = text
-        self.image = PhotoImage(file="pictures/bullet.png")
+        self.path = resource_path0("pictures/bullet.png")
+        self.image = PhotoImage(file=self.path)
         self.imageheight = self.image.height()/2
         self.imagewidth = self.image.width()/2
         self.obj = self.canvas.create_image(self.x, self.y, image=self.image)
