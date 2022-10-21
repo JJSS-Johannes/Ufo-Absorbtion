@@ -1,22 +1,18 @@
 # Requirements:
-- Python 3
-- Pip
+- (Python 3)(You can just Run Space Absorbtion.exe)
+- (Pip)
 
 # Run:
-- Move the Folder to your Favourite location
-- Double Click Start.bat
-- Or Double Click the "... .exe" file if you downloaded the "..._exe.zip"
+- (Move the Un-Zipped Folder to your Favourite location)
+- (Double Click Start.bat)
+- Execute Space Absorbtion.exe
 
 # Control
 1. Key: A,D
     - Move Left, Right
 2. Key: Space
-    - Start Beam
-
-# How To Play
-- Kill all the ducks with the Beam
-- If you kill a Friend you'll get damage
-- No Damage = Dead
-- No Ducks = Win
-
-
+    - Acticate Beam(You can't move while the Beam is active)
+# EXE:
+- If you Upload the .exe to virustotal.com it will detect Viruses
+- These Are False Positive, we don't know how to fix this yet
+- If you don't trust the .exe you can just download the zip file and the source code
