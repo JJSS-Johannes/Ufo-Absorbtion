@@ -1,11 +1,11 @@
 # Requirements:
-- (Python 3)(You can just Run Space Absorbtion.exe)
+- (Python 3)(You can just Run Ufo Absorbtion.exe)
 - (Pip)
 
 # Run:
 - (Move the Un-Zipped Folder to your Favourite location)
 - (Double Click Start.bat)
-- Execute Space Absorbtion.exe
+- Execute Ufo Absorbtion.exe
 
 # Control
 1. Key: A,D

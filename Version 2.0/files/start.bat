@@ -27,12 +27,12 @@ pause
 exit
 :start
 echo off
-title Space Absorbtion Console
+title Ufo Absorbtion Console
 cls
 echo **INFO**
 echo This Screen has no meaning, just minimize it
-echo Running Space Absorbtion v.2.0
-python Space_Absorbtion.py
+echo Running Ufo Absorbtion v.2.0
+python Ufo_Absorbtion.py
 cls
 echo Process terminated
 pause
