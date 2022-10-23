@@ -7,11 +7,17 @@
 - (Double Click Start.bat)
 - Execute Ufo Absorbtion.exe
 
-# Control
+# Control:
 1. Key: A,D
     - Move Left, Right
 2. Key: Space
     - Acticate Beam(You can't move while the Beam is active)
+
+# How To Play:
+- Kill all the ducks with the Beam
+- If you kill a Friend you'll get damage
+- No Damage = Dead
+- No Ducks = Win
 
 # EXE:
 - If you Upload the .exe to virustotal.com it will detect Viruses
