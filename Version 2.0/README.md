@@ -12,6 +12,7 @@
     - Move Left, Right
 2. Key: Space
     - Acticate Beam(You can't move while the Beam is active)
+
 # EXE:
 - If you Upload the .exe to virustotal.com it will detect Viruses
 - These Are False Positive, we don't know how to fix this yet
