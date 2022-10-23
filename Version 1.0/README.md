@@ -1,22 +1,25 @@
+# Contact:
+- https://discord.gg/WahFF8jXW5 
+
+# Note:
+- Outdated new Version 2.0
+- No .exe Available
+
 # Requirements:
 - Python 3
-- Pip
 
 # Run:
-- Move the Folder to your Favourite location
+- Move the Un-Zipped Folder to your Favourite location
 - Double Click Start.bat
-- Or Double Click the "... .exe" file if you downloaded the "..._exe.zip"
 
-# Control
+# Control:
 1. Key: A,D
     - Move Left, Right
 2. Key: Space
-    - Start Beam
+    - Acticate Beam(You can't move while the Beam is active)
 
-# How To Play
+# How To Play:
 - Kill all the ducks with the Beam
 - If you kill a Friend you'll get damage
 - No Damage = Dead
 - No Ducks = Win
-
-
