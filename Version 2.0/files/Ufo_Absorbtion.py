@@ -10,7 +10,6 @@ from tkinter import *
 import threading
 import time
 import random
-import pyautogui
 import os
 
 sel = Tk()
